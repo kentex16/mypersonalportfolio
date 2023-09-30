@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title> My First Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"> </script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li> <a href="#"> Home</a></li>
+                <li> <a href="#"> About</a></li>
+                <li> <a href="#"> Services </a></li>
+                <li> <a href="#"> Works </a></li>
+                <li> <a href="#"> Forms </a> </li>
+            </ul>
+        </nav>  
+        <div class="header-text">
+            <p> Front-End Designer</p>
+            <h1>Hi I'm <span> Kenneth </span> <br> Novero From Philippines</h1>
+        </div>  
+    </div>
+</div>
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p> Kenneth Novero is a skilled and dedicated computer science 4th year college student, who has a strong passion for front-end web design and development and video editing. With an impressive background in computer programming, game development, application development, software engineering, and introduction to computing, this student has developed a broad skill set in various programming languages, including Python, Java, MySQL, and JavaScript. Their primary interests in front-end web development reflect their passion for creating visually appealing and user-friendly interfaces for websites. With a keen eye for animation and design, this student brings an artistic flair to their work. Additionally, their proficiency in HTML and CSS and knowledge of Java and Python make them a versatile developer capable of handling complex projects. Their expertise in video editing, combined with a typing speed of 65 WPM, showcases their ability to multitask and deliver high-quality work. This student is driven by their desire to create innovative and creative solutions, and their passion and enthusiasm make them a valuable asset to any team.</p>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab ('subj')"> Taken Subjects</p>
+            <p class="tab-links" onclick="opentab ('lang')"> Project Experiences</p>
+            <p class="tab-links"onclick="opentab ('edu')"> Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="subj">
+            <ul>
+                <li><span> Computer Programming I and II </span> <br> Python and Java</li>
+                <li><span> Front-End Development</span> <br> HTML CSS AND JAVASCRIPT</li>
+                <li><span> Application Development</span> <br> React Native and Animation/ Building Android OS Apps</li>
+                <li><span> Software Engineering</span> <br> Software Testing</li>
+            </ul>       
+        </div>
+        <div class="tab-contents" id="lang">
+            <ul>
+                <li><span> 2022 </span> <br> Front-end Developer at MCC</li>
+                <li><span> 2021 </span> <br> Animation using Adobe Animate</li>
+                <li><span> 2022 </span> <br> Game Developer using Unity </li>
+                <li><span> 2019-2021 </span> <br> Python, Java and  Web Development </li>
+                <li><span> 2021 </span> <br> Application Developer using React Native </li>
+                
+            </ul>
+        </div>
+        <div class="tab-contents" id="edu">
+            <ul>
+                <li><span> 2013-2019 </span> <br> Studied High School at Tagaytay City Science National High School</li>
+                <li><span> 2019-2023 </span> <br> Studied Bachelor of Science in Computer Science at Cavite State University </li>
+                
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<div id="services"> 
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div> 
+                <i class="fas fa-code"> </i>
+                <h2> Front- End Development </h2>
+                <p> HTML CSSM AND JAVASCRIPT</p>
+                <a href="#"> Learn about Front-end</a>
+            </div>
+            <div> 
+                <i class="fas fa-crop-alt"> </i>
+                <h2> Video Editing </h2>
+                <p> Adobe </p>
+                <a href="#"> Learn about Video Editing</a>
+            </div>
+            <div> 
+                <i class="fas fa-app-store"> </i>
+                <h2> App Design </h2>
+                <p> ANDROID STUDIO AND REACT NATIVE </p>
+                <a href="#"> Learn about Application Development</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpeg" alt="Work 1">
+                <div class="layer">
+                     <h3>Front-end Designing  </h3>
+                     <p>This work focus on layout through the use of HTML, CSS and JavaScript</p>
+                     <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Work 2">
+                <div class="layer">
+                    <h3>Video Editing </h3>
+                    <p>This work focus on video rendering using Adobe</p>
+                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Work 3">
+                <div class="layer">
+                    <h3>Application Development </h3>
+                    <p>This work focus on Android Application using React Native</p>
+                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script> 
+var tablinks =document.getElementsByClassName ("tab-links");
+var tabcontents =document.getElementsByClassName ("tab-contents");
+function opentab (tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove ("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById (tabname).classList.add("active-tab");
+
+
+}
+</script>
+</body>
+</html>
