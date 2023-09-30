@@ -12,11 +12,11 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.png" title="logo"class="logo">
             <ul>
                 <li> <a href="#"> Home</a></li>
-                <li> <a href="#"> About</a></li>
-                <li> <a href="#"> Services </a></li>
+                <li> <a href="#about"> About</a></li>
+                <li> <a href="#services"> Services </a></li>
                 <li> <a href="#"> Works </a></li>
                 <li> <a href="#"> Forms </a> </li>
             </ul>
@@ -27,11 +27,12 @@
         </div>  
     </div>
 </div>
+<section id ="about">
 <div id="about"> 
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.jpg">
+                <img src="images/user.jpg" title="user">
             </div>
             <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
@@ -69,6 +70,8 @@
         </div>
     </div>
 </div>
+</section>
+<section class="services">
 <div id="services"> 
     <div class="container">
         <h1 class="sub-title"> My Services</h1>
@@ -94,7 +97,7 @@
         </div>
     </div>
 </div>
-
+</section>
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
@@ -126,6 +129,7 @@
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script> 
 var tablinks =document.getElementsByClassName ("tab-links");
@@ -142,6 +146,32 @@ function opentab (tabname) {
 
 
 }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+       const scrollToTopLinks = document.querySelectorAll('a[href^="#"]');
+       
+       for (const link of scrollToTopLinks) {
+          link.addEventListener('click', function (e) {
+             e.preventDefault();
+             const targetId = this.getAttribute('href').substring(1); 
+             const targetElement = document.getElementById(targetId);
+             
+             if (targetElement) {
+                window.scrollTo({
+                   top: targetElement.offsetTop,
+                   behavior: 'smooth', 
+                });
+             }
+          });
+       }
+    });
+ </script>
+ <script>
+   
+    $(document).ready(function () {
+        $('.page-transition').addClass('active');
+    });
 </script>
 </body>
 </html>
