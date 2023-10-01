@@ -21,7 +21,7 @@
                 <li> <a href="#"> Home</a></li>
                 <li> <a href="#about"> About</a></li>
                 <li> <a href="#services"> Services </a></li>
-                <li> <a href="#"> Works </a></li>
+                <li> <a href="#portfolio"> Projects </a></li>
                 <li> <a href="#"> Forms </a> </li>
             </ul>
         </nav>  
@@ -45,10 +45,11 @@
             </div>
             <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
-            <p> Kenneth Novero is a skilled and dedicated computer science 4th year college student, who has a strong passion for front-end web design and development and video editing. With an impressive background in computer programming, game development, application development, software engineering, and introduction to computing, this student has developed a broad skill set in various programming languages, including Python, Java, MySQL, and JavaScript. Their primary interests in front-end web development reflect their passion for creating visually appealing and user-friendly interfaces for websites. With a keen eye for animation and design, this student brings an artistic flair to their work. Additionally, their proficiency in HTML and CSS and knowledge of Java and Python make them a versatile developer capable of handling complex projects. Their expertise in video editing, combined with a typing speed of 65 WPM, showcases their ability to multitask and deliver high-quality work. This student is driven by their desire to create innovative and creative solutions, and their passion and enthusiasm make them a valuable asset to any team.</p>
+            <p> Kenneth Novero is a dedicated graduate student pursuing a Bachelor of Science in Computer Science. With a strong passion for technology and an impressive background in various programming languages and development tools, Kenneth possesses a versatile skill set that includes proficiency in Java and Python, intermediate knowledge of JavaScript, web development expertise in HTML, CSS, and PHP, and experience with database management using SQL, Firebase, and MySQL. Kenneth's primary passion lies in front-end web development, where they excel at creating visually appealing and user-friendly website interfaces. With a keen eye for design and animation, they bring an artistic flair to their work. Additionally, their proficiency in HTML, CSS, and various programming languages makes them a well-rounded developer capable of handling complex projects. Kenneth is also experienced in video editing, showcasing their ability to multitask and deliver high-quality work efficiently. Their dedication to creating innovative and creative solutions, combined with their enthusiasm for technology, makes them a valuable asset to any team.</p>
         <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab ('subj')"> Taken Subjects</p>
             <p class="tab-links" onclick="opentab ('lang')"> Project Experiences</p>
+            <p class="tab-links" onclick="opentab ('int')"> Skills</p>
             <p class="tab-links"onclick="opentab ('edu')"> Education</p>
         </div>
         <div class="tab-contents active-tab" id="subj">
@@ -57,18 +58,48 @@
                 <li><span> Front-End Development</span> <br> HTML CSS AND JAVASCRIPT</li>
                 <li><span> Application Development</span> <br> React Native and Animation/ Building Android OS Apps</li>
                 <li><span> Software Engineering</span> <br> Software Testing</li>
+                <li><span> Game Development </span> <br> Unity with C#</li>
             </ul>       
         </div>
         <div class="tab-contents" id="lang">
             <ul>
-                <li><span> 2022 </span> <br> Front-end Developer at MCC</li>
-                <li><span> 2021 </span> <br> Animation using Adobe Animate</li>
-                <li><span> 2022 </span> <br> Game Developer using Unity </li>
-                <li><span> 2019-2021 </span> <br> Python, Java and  Web Development </li>
-                <li><span> 2021 </span> <br> Application Developer using React Native </li>
-                
+                <li><span> 2023 </span> <br> Ecommerce using Laravel</li>
+                <li><span> 2023 </span> <br> Inventory Management System using PHP</li>
+                <li><span> 2022 </span> <br> Barangay Healthcare Inventory using PHP </li>
+                <li><span> 2022 </span> <br> Front-end Intern at MCC  </li>
+                <li><span> 2023 </span> <br> Calculator including Jacobi Method, IEEE 754 and Root Finding in Mobile Application </li>
+                <li><span> 2022-2023 </span> <br> Pocket Herbs - Image Processing Application using Leaf Image  </li>
             </ul>
         </div>
+        <div class="tab-contents" id="int">
+            <ul>
+                <li><span> Proficient in </span> <br> Java Programming </li>
+                <li><span> Proficient in </span> <br> Python </li>
+                <li><span> Beginner in </span> <br> Dart </li>
+                <li><span> Intermediate in </span> <br> JavaScript </li>
+                <li><span> Proficient in </span> <br> Visual Studio Code </li>
+                <li><span> Advanced in </span> <br> Android Studio </li>
+                <li><span> Intermediate in </span> <br> Eclipse </li>
+                <li><span> Version Control: </span> <br> Intermediate in Git </li>
+                <li><span> Intermediate in </span> <br> GitHub </li>
+                <li><span> Web Development: </span> <br> Proficient in HTML </li>
+                <li><span> Proficient in </span> <br> CSS </li>
+                <li><span> Proficient in </span> <br> PHP </li>
+                <li><span> Intermediate in </span> <br> JavaScript </li>
+                <li><span> Intermediate in </span> <br> Laravel </li>
+                <li><span> Intermediate in </span> <br> jQuery </li>
+                <li><span> Familiar with </span> <br> Node.js </li>
+                <li><span> Knowdlege of </span> <br> JSON </li>
+                <li><span> Knowledge of </span> <br> Ajax </li>
+                <li><span> Familiar with </span> <br> Bootstrap CSS </li>
+                <li><span> Database Management: </span> <br> Intermediate in SQL </li>
+                <li><span> Intermediate in </span> <br> Firebase </li>
+                <li><span> Intermediate in </span> <br> MySQL </li>
+                <li><span> Mobile App Development: </span> <br> Beginner in Flutter </li>
+                <li><span> Beginner in </span> <br> React Native </li>
+            </ul>
+        </div>
+        
         <div class="tab-contents" id="edu">
             <ul>
                 <li><span> 2013-2019 </span> <br> Studied High School at Tagaytay City Science National High School</li>
@@ -80,61 +111,73 @@
     </div>
 </div>
 </section>
-<section class="services">
+<section id="services">
 <div id="services"> 
     <div class="container">
         <h1 class="sub-title"> My Services</h1>
         <div class="services-list">
             <div> 
                 <i class="fas fa-code"> </i>
-                <h2> Front- End Development </h2>
-                <p> HTML CSSM AND JAVASCRIPT</p>
-                <a href="#"> Learn about Front-end</a>
+                <h2> Website Development </h2>
+                <p> HTML, CSS, JAVASCRIPT, PHP, LARAVEL, BOOTSTRAP etc.</p>
+                <a href="#"> Learn about Website Developmnet</a>
             </div>
             <div> 
                 <i class="fas fa-crop-alt"> </i>
-                <h2> Video Editing </h2>
-                <p> Adobe </p>
-                <a href="#"> Learn about Video Editing</a>
-            </div>
-            <div> 
-                <i class="fas fa-app-store"> </i>
-                <h2> App Design </h2>
-                <p> ANDROID STUDIO AND REACT NATIVE </p>
+                <h2> Application Development </h2>
+                <p> Java, Android Studio</p>
                 <a href="#"> Learn about Application Development</a>
             </div>
         </div>
     </div>
 </div>
 </section>
+<section id ="portfolio">
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Project</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.jpeg" alt="Work 1">
                 <div class="layer">
-                     <h3>Front-end Designing  </h3>
-                     <p>This work focus on layout through the use of HTML, CSS and JavaScript</p>
+                     <h3>Lot Ecommerce </h3>
+                     <p>A ecommerce website which is a family business project for me. I work on this to enhance my skills in website development and to have a foundation in Laravel Framework.</p>
                      <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-2.png" alt="Work 2">
                 <div class="layer">
-                    <h3>Video Editing </h3>
-                    <p>This work focus on video rendering using Adobe</p>
+                    <h3>Novero LPG Trading IMS </h3>
+                    <p>A website that have the inventory and database where it stored the sales of Novero LPG Trading. This website is used to store the daily sales for proper management. The person who has credits has its own list as well the customer who doesn’t return cylinder. This project is for the business of my family. </p>
                     <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
                     </div>
             </div>
             <div class="work">
                 <img src="images/work-3.png" alt="Work 3">
                 <div class="layer">
-                    <h3>Application Development </h3>
-                    <p>This work focus on Android Application using React Native</p>
+                    <h3>Task Manager Website </h3>
+                    <p>This website is developed during my internship in Melham Construction Corporation. The website is composed of task and movements inside of internship in the Company. I worked as front-end in this project. </p>
                     <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
                     </div>
             </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Work 4">
+                <div class="layer">
+                    <h3>Numeric and Symbolic Computation </h3>
+                    <p>A mobile application that computes IEEE 754, Root Finding and Jacobi Method. The IEE 754 button have the 32-bit and 64-bit function. The Root Finding have the Bisection, False Position, Tangent and Secant Method. This project is developed for my completion of COSC110 subject.  </p>
+                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Work 5">
+                <div class="layer">
+                    <h3>Pocket Herbs </h3>
+                    <p>A mobile application that detects plant using leaf image. This mobile application is created during my undergraduate thesis as software for completion. The objectives of the application are to determine the accuracy between KNN and CNN algorithm.   </p>
+                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+        </section>
         </div>
     </div>
 </div>
