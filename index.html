@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <title> My First Website Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"> </script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -18,17 +18,18 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" title="logo"class="logo">
+            <img src="images/logo.png" title="logo" class="logo">
             <ul>
-                <li> <a href="#"> Home</a></li>
-                <li> <a href="#about"> About</a></li>
-                <li> <a href="#services"> Services </a></li>
-                <li> <a href="#portfolio"> Projects </a></li>
-                <li> <a href="#"> Forms </a> </li>
+                <li style="--i: 1;"><a href="#" class="active"> Home</a></li>
+                <li style="--i: 2;"><a href="#about" class="active"> About</a></li>
+                <li style="--i: 3;"><a href="#services" class="active"> Services</a></li>
+                <li style="--i: 4;"><a href="#portfolio" class="active"> Projects</a></li>
+                <li style="--i: 5;"><a href="#" class="active"> Forms</a></li>
             </ul>
-        </nav>  
+        </nav>
+        
         <div class="header-text">
-            <h1>Hi I'm <span> Kenneth </span> <br> Novero From Philippines</h1>
+            <h1 style="--i:6;" class="active">Hi I'm <span style="--i:7;" class="active"> Kenneth </span> <br> Novero From Philippines</h1>
             <p> <span class="text"></span></p>
             <section class="link">
             <a href="https://www.facebook.com/Kennethcomandante01/" title="facebook"> <i class='bx bxl-facebook'></i></a>
@@ -74,6 +75,7 @@
                 <li><span> 2022 </span> <br> Front-end Intern at MCC  </li>
                 <li><span> 2023 </span> <br> Calculator including Jacobi Method, IEEE 754 and Root Finding in Mobile Application </li>
                 <li><span> 2022-2023 </span> <br> Pocket Herbs - Image Processing Application using Leaf Image  </li>
+                <li><span> 2019-2022 </span> <br> Other Project for fulfillment of Schoolworks  </li>
             </ul>
         </div>
         <div class="tab-contents" id="int">
@@ -147,43 +149,43 @@
         <h1 class="sub-title">My Project</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.jpeg" alt="Work 1">
+                <img src="images/LOTE.PH.png" alt="Work 1">
                 <div class="layer">
                      <h3>Lot Ecommerce </h3>
                      <p>A ecommerce website which is a family business project for me. I work on this to enhance my skills in website development and to have a foundation in Laravel Framework.</p>
-                     <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                     <a href="https://www.facebook.com/Kennethcomandante01/" title="Lote"> <i class='bx bx-skip-next'></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png" alt="Work 2">
+                <img src="images/IMS.png" alt="Work 2">
                 <div class="layer">
                     <h3>Novero LPG Trading IMS </h3>
                     <p>A website that have the inventory and database where it stored the sales of Novero LPG Trading. This website is used to store the daily sales for proper management. The person who has credits has its own list as well the customer who doesn’t return cylinder. This project is for the business of my family. </p>
-                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    <a href="#" title="IMS"> <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png" alt="Work 3">
+                <img src="images/TASK.png" alt="Work 3">
                 <div class="layer">
                     <h3>Task Manager Website </h3>
                     <p>This website is developed during my internship in Melham Construction Corporation. The website is composed of task and movements inside of internship in the Company. I worked as front-end in this project. </p>
-                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    <a href="#" title="internship"> <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png" alt="Work 4">
+                <img src="images/Numerical.png" alt="Work 4">
                 <div class="layer">
                     <h3>Numeric and Symbolic Computation </h3>
                     <p>A mobile application that computes IEEE 754, Root Finding and Jacobi Method. The IEE 754 button have the 32-bit and 64-bit function. The Root Finding have the Bisection, False Position, Tangent and Secant Method. This project is developed for my completion of COSC110 subject.  </p>
-                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    <a href="#" title="cosc"> <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png" alt="Work 5">
+                <img src="images/Pocket.jpg" alt="Work 5">
                 <div class="layer">
                     <h3>Pocket Herbs </h3>
                     <p>A mobile application that detects plant using leaf image. This mobile application is created during my undergraduate thesis as software for completion. The objectives of the application are to determine the accuracy between KNN and CNN algorithm.   </p>
-                    <a href="#"> <i class= "fas fa-external-link-alt"></i></a>
+                    <a href="#" title="thesis"> <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
         </section>
@@ -191,10 +193,7 @@
     </div>
 </div>
 </div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/main.js"></script>
 <script> 
@@ -214,24 +213,25 @@ function opentab (tabname) {
 }
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-       const scrollToTopLinks = document.querySelectorAll('a[href^="#"]');
-       
-       for (const link of scrollToTopLinks) {
-          link.addEventListener('click', function (e) {
-             e.preventDefault();
-             const targetId = this.getAttribute('href').substring(1); 
-             const targetElement = document.getElementById(targetId);
-             
-             if (targetElement) {
-                window.scrollTo({
-                   top: targetElement.offsetTop,
-                   behavior: 'smooth', 
+  document.addEventListener('DOMContentLoaded', function () {
+    const scrollToTopLinks = document.querySelectorAll('a[href^="#"]');
+    
+    for (const link of scrollToTopLinks) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    
                 });
-             }
-          });
-       }
-    });
+            }
+        });
+    }
+});
+
  </script>
  <script>
    
@@ -239,8 +239,9 @@ function opentab (tabname) {
         $('.page-transition').addClass('active');
     });
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    
+    AOS.init();
 </script>
 </body>
 </html>
