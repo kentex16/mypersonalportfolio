@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <title> My First Website Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -15,8 +16,8 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 </head>
 <body>
-    <div id="root">
-    <div class="outer-border">
+    <div class="outer-border" >
+        <div id="theme-open" class="fas fa-bars"></div>
     <div class="inner-content">
 <div data-aos="fade-up" data-aos-duration="600" data-aos-easing="linear">
 <header class="header">
@@ -199,13 +200,38 @@
 </div>
 </div>
 </div>
+
+<div class="themes-container">
+
+    <div id="theme-close" class="fas fa-times"></div>
+
+    <h3>Switch theme</h3>
+
+    <div class="theme-toggler">
+        <span>Light</span>
+        <span class="toggler"></span>
+        <span>Dark</span>
+    </div>
+
+    <h3>Pick a color</h3>
+
+    <div class="theme-colors">
+        <div class="color" style="background:#2980b9"></div>
+        <div class="color" style="background:#27ae60;"></div>
+        <div class="color" style="background:#ffa502;"></div>
+        <div class="color" style="background:#8e44ad;"></div>
+        <div class="color" style="background:#0fb9b1;"></div>
+        <div class="color" style="background:#ffd32a;"></div>
+        <div class="color" style="background:#ff0033;"></div>
+        <div class="color" style="background:#e84393;"></div>
+    </div>
+
 </div>
 
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/main.js"></script>
-<script  type="module"src="js/app.js"></script>
 <script> 
 var tablinks =document.getElementsByClassName ("tab-links");
 var tabcontents =document.getElementsByClassName ("tab-contents");
@@ -252,6 +278,50 @@ function opentab (tabname) {
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+
+<script>
+    
+let themeToggler = document.querySelector('.theme-toggler');
+
+themeToggler.onclick = () => {
+    themeToggler.classList.toggle('active');
+
+    if (themeToggler.classList.contains('active')) {
+        document.body.classList.add('active');
+        
+    } else {
+        document.body.classList.remove('active');
+    }
+}
+
+document.querySelectorAll('.theme-colors .color').forEach(color => {
+    color.onclick = () => {
+        let background = color.style.background;
+        
+        
+        document.querySelector(':root').style.setProperty('--red', background);
+
+    
+        let specificElement = document.querySelector('.outer-border .active');
+        specificElement.style.color = background;
+    }
+});
+
+
+
+
+let theme = document.querySelector('.themes-container');
+
+document.querySelector('#theme-open').onclick = () => {
+    theme.classList.add('active');
+    document.body.style.paddingRight = '350px';
+}
+
+document.querySelector('#theme-close').onclick = () => {
+    theme.classList.remove('active');
+    document.body.style.paddingRight = '0px';
+}
 </script>
 </body>
 </html>
