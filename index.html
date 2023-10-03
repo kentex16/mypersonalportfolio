@@ -24,7 +24,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" title="logo" class="logo">
+            <img src="" class="logo">
             <ul>
                 <li style="--i: 1;"><a href="#header" class="active"> Home</a></li>
                 <li style="--i: 2;"><a href="#about" class="active"> About</a></li>
@@ -159,7 +159,8 @@
                 <div class="layer">
                      <h3>Lot Ecommerce </h3>
                      <p>A ecommerce website which is a family business project for me. I work on this to enhance my skills in website development and to have a foundation in Laravel Framework.</p>
-                     <a href="https://www.facebook.com/Kennethcomandante01/" title="Lote"> <i class='bx bx-skip-next'></i></a>
+                     <a href="#" data-content-id="lot-ecommerce"> <i class='bx bx-skip-next'></i></a>
+
                 </div>
             </div>
             <div class="work">
@@ -194,6 +195,11 @@
                     <a href="#" title="thesis"> <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
+
+            <div id="content-container" class="layer">
+            
+            </div>
+            
         </section>
         </div>
     </div>
@@ -301,7 +307,7 @@ document.querySelectorAll('.theme-colors .color').forEach(color => {
         
         
         document.querySelector(':root').style.setProperty('--red', background);
-
+        document.querySelector(':root').style.setProperty('--only', background);
     
         let specificElement = document.querySelector('.outer-border .active');
         specificElement.style.color = background;

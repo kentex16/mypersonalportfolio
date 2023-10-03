@@ -9,6 +9,7 @@
     --box-shadow:0 5px 10px rgba(0,0,0,.1);
     --dark-bg: #000;
     --dark-text: #fff;
+    --only :#fff;
   }
   
   
@@ -23,7 +24,7 @@ html {
 }
 
 body{
-    background: var(--light-bg);
+    background: var(--light-color);
     color: var(--bg);
     
 }
@@ -38,14 +39,12 @@ body.active{
 
 .outer-border {
     padding: 20px; 
-    background-color: var(--red);
     border-radius: 5px; 
     
   }
   
   .inner-content {
     padding: 10px; 
-    background-color: #000000; 
   }
   
   
@@ -61,7 +60,7 @@ body.active{
     height: 100vh;
     background: url(images/background.png) no-repeat;
     background-position:90% 50%;
-    background-size: 700px 900px;
+    background-size: 600px 800px;
 
 }
 .container {
@@ -82,12 +81,15 @@ nav ul li {
     margin: 10px 20px;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    
 }
 nav ul li a {
     color:var(--bg);
     text-decoration: none;
     font-size: 20px;
     position: relative;
+    font-weight: bold;
+    color: var(--only);
 }
 nav ul li a::after{
     content: '';
