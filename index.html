@@ -14,6 +14,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="tailwind.css">
+
 </head>
 <body>
     <div class="outer-border" >
@@ -31,6 +33,7 @@
                 <li style="--i: 3;"><a href="#services" class="active"> Services</a></li>
                 <li style="--i: 4;"><a href="#portfolio" class="active"> Projects</a></li>
                 <li style="--i: 5;"><a href="#" class="active"> Forms</a></li>
+                
             </ul>
         </nav>
         
@@ -158,9 +161,12 @@
                 <img src="images/LOTE.PH.png" alt="Work 1">
                 <div class="layer">
                      <h3>Lot Ecommerce </h3>
+                     <span class="custom-box">php</span>
+                     <span class="custom-box">laravel</span>
+                     <span class="custom-box">php application</span>
+                     <span class="custom-box">web app</span>
                      <p>A ecommerce website which is a family business project for me. I work on this to enhance my skills in website development and to have a foundation in Laravel Framework.</p>
-                     <a href="#" data-content-id="lot-ecommerce"> <i class='bx bx-skip-next'></i></a>
-
+                     <a href="#" data-content-id="lot-ecommerce"> View More<i class='bx bx-skip-next'></i></a>
                 </div>
             </div>
             <div class="work">
@@ -168,7 +174,7 @@
                 <div class="layer">
                     <h3>Novero LPG Trading IMS </h3>
                     <p>A website that have the inventory and database where it stored the sales of Novero LPG Trading. This website is used to store the daily sales for proper management. The person who has credits has its own list as well the customer who doesn’t return cylinder. This project is for the business of my family. </p>
-                    <a href="#" title="IMS"> <i class='bx bx-skip-next'></i></a>
+                    <a href="#" title="IMS"> View more <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
             <div class="work">
@@ -176,7 +182,7 @@
                 <div class="layer">
                     <h3>Task Manager Website </h3>
                     <p>This website is developed during my internship in Melham Construction Corporation. The website is composed of task and movements inside of internship in the Company. I worked as front-end in this project. </p>
-                    <a href="#" title="internship"> <i class='bx bx-skip-next'></i></a>
+                    <a href="#" title="internship"> View More <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
             <div class="work">
@@ -184,7 +190,7 @@
                 <div class="layer">
                     <h3>Numeric and Symbolic Computation </h3>
                     <p>A mobile application that computes IEEE 754, Root Finding and Jacobi Method. The IEE 754 button have the 32-bit and 64-bit function. The Root Finding have the Bisection, False Position, Tangent and Secant Method. This project is developed for my completion of COSC110 subject.  </p>
-                    <a href="#" title="cosc"> <i class='bx bx-skip-next'></i></a>
+                    <a href="#" title="cosc"> View More<i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
             <div class="work">
@@ -192,13 +198,14 @@
                 <div class="layer">
                     <h3>Pocket Herbs </h3>
                     <p>A mobile application that detects plant using leaf image. This mobile application is created during my undergraduate thesis as software for completion. The objectives of the application are to determine the accuracy between KNN and CNN algorithm.   </p>
-                    <a href="#" title="thesis"> <i class='bx bx-skip-next'></i></a>
+                    <a href="#" title="thesis"> View More <i class='bx bx-skip-next'></i></a>
                     </div>
             </div>
 
             <div id="content-container" class="layer">
             
             </div>
+            
             
         </section>
         </div>
@@ -238,6 +245,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/tailwind.config.js"></script>
 <script> 
 var tablinks =document.getElementsByClassName ("tab-links");
 var tabcontents =document.getElementsByClassName ("tab-contents");
