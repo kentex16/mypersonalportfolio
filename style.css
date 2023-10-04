@@ -10,8 +10,8 @@
     --dark-bg: #000;
     --dark-text: #fff;
     --only :#fff;
+    --particle-color: #ff0000;
   }
-  
   
 *{
     margin :0 ;
@@ -445,3 +445,17 @@ nav ul li a:hover::after{
     border-radius: 4px;
     margin-right: 8px; 
 }
+.framework i{
+    color: var(--red);
+    margin: 15px 3px 3px 5px;
+    font-size: 60px;
+}
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other content */
+  }
+  
