@@ -473,6 +473,204 @@ nav ul li a:hover::after{
     height: 100%;
     z-index: -1; 
   }
+
+    /* CSS equivalent to the provided HTML classes */
+.my-custom-div.relative {
+  position: relative;
+}
+
+.my-custom-div.isolate {
+  isolation: isolate;
+}
+
+.my-custom-div.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.my-custom-div.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.my-custom-div.lg-px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.innerdiv {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2xl;
+}
+
+.innerdiv.sm-py-48 {
+  padding-top: 12rem; 
+}
+
+.innerdiv.md-py-38 {
+  padding-top: 9.5rem; 
+}
+
+.innerdiv.lg-py-28 {
+  padding-top: 7rem; 
+}
+
+.custom-heading {
+  text-align: center;
+  margin-top: 2.5rem; 
+  font-size: 1.5rem; 
+  line-height: 1;
+  color: #ffffff; 
+}
+
+@media (min-width: 768px) {
+  .custom-heading {
+    font-size: 2.5rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-heading {
+    font-size: 2rem; 
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-heading {
+    font-size: 1.25rem; 
+  }
+  .custom-heading.dark {
+    color: #fff; 
+  }
+}
+
+.custom-grid {
+  display: grid;
+  gap: 1rem; 
+}
+
+.custom-image {
+  height: auto;
+  max-width: 90%;
+  border-radius: 0.25rem; 
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+}
+
+.custom-flex {
+  display: flex;
+  margin-top: 0.75rem; 
+}
+
+.custom-text {
+  color: #ffffff; 
+  font-weight: 100;
+}
+
+.custom-container {
+  white-space: nowrap; 
+  overflow-x: auto; 
+}
+
+.custom-box {
+  display: inline-block;
+  background-color: #0074d9;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+
+.custom-container {
+  margin-top: 10px; 
+}
+
+
+.dark .custom-box {
+  background-color: #001f3f;
+  color: #a8d2ff;
+}
+
+
+.custom-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-card-header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.custom-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-card-content {
+  display: flex;
+}
+
+.custom-image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.custom-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-metadata {
+  flex: 2;
+}
+
+.custom-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.custom-text {
+  font-size: 14px;
+  color: #555;
+  margin-right: 10px;
+}
+
+.custom-tags {
+  margin-bottom: 10px;
+}
+
+.custom-box {
+  display: inline-block;
+  background-color: #0074d9;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+
+p {
+  font-size: 14px;
+  color: #fcfcfc;
+  margin: 0;
+}
+
+
   
     </style>
 </head>
@@ -494,6 +692,40 @@ nav ul li a:hover::after{
                 
             </ul>
         </nav>
+        <div class="custom-card">
+            <div class="custom-card-header">
+        <div class="my-custom-div relative isolate px-6 pt-14 lg-px-8">
+            <div class="innerdiv mx-auto max-w-2xl sm-py-48 md-py-38 lg-py-28">
+                <h1 class="custom-heading">
+                    Numerical and Symbolic Computation Application
+                  </h1>       
+                  <div class="custom-grid">
+                    <div>
+                        <img class="custom-image" src="images/numerical.png" alt="">
+                    </div>
+                    <div class="grid">
+    
+                      </div>
+                      <div class="custom-flex">
+                        Date: July 2023
+                      </div>
+                      Tags:
+                      <div class="custom-container">
+                      <span class="custom-box">Android Studio</span>
+                     <span class="custom-box">Java</span>
+                     <span class="custom-box">Kotlin</span>
+                     <span class="custom-box">XML</span>
+                    
+                    </div>
+                    <p> <strong> Description: </strong> A mobile application that are presented the IEEE 754, Root Finding and Jacobi Method iteration.</p>
+                      
+                  </div>
+                             
+              </div>
+              
+          </div>
+        </div>
+    </div>
         
       
     </div>
