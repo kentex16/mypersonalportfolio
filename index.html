@@ -34,7 +34,7 @@
                 <li style="--i: 2;"><a href="#about" class="active"> About</a></li>
                 <li style="--i: 3;"><a href="#services" class="active"> Services</a></li>
                 <li style="--i: 4;"><a href="#portfolio" class="active"> Projects</a></li>
-                <li style="--i: 5;"><a href="#" class="active"> Forms</a></li>
+                <li style="--i: 5;"><a href="#forms" class="active"> Forms</a></li>
                 
             </ul>
         </nav>
@@ -45,7 +45,9 @@
             <section class="link">
             <a href="https://www.facebook.com/Kennethcomandante01/" title="facebook"> <i class='bx bxl-facebook'></i></a>
             <a href="https://github.com/kentex16" title="github"> <i class='bx bxl-github' ></i></a>
-
+            <a href="https://www.instagram.com/iamkineeet/?hl=en" title="instagram"> <i class='bx bxl-instagram'></i></a>
+            <a href="mailto:kennethnovero6@gmail.com"> <i class='bx bxl-gmail'></i></a>
+            <a href="https://www.linkedin.com/in/kenneth-novero-a6bb35243/"><i class='bx bxl-linkedin' ></i></a>
         </section>
         <section class ="framework">
         <i class="fa-brands fa-laravel"></i>
@@ -245,6 +247,8 @@
                     <span class="custom-box">Google Collab</span>
                     <span class="custom-box">Google Teachable Machine</span>
                     <span class="custom-box">Python</span>
+                    <span class="custom-box">Machine Learning</span>
+                    <span class="custom-box">Image Processing</span>
                     <p>A mobile application that detects plant using leaf image. This mobile application is created during my undergraduate thesis as software for completion. The objectives of the application are to determine the accuracy between KNN and CNN algorithm.   </p>
                     <a href="pocket.html" title="thesis"> View More </a>
                     </div>
@@ -253,14 +257,48 @@
             <div id="content-container" class="layer">
             
             </div>
-            
-            
+            <br>
+            <br>
+<section id="forms">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>GET IN TOUCH!</h3>
+                    <p> <i class="fa-solid fa-envelope"></i> kennethnovero6@gmail.com</p>
+                    <p>  <i class="fa-solid fa-phone"></i>09298527829</p>
+                    <a href="./CV_NOVERO.pdf" download class="download-btn">Download my CV</a>
+                    <div class="link">
+                        <a href="https://www.facebook.com/Kennethcomandante01/" title="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/iamkineeet/?hl=en" title="github"> <i class='bx bxl-instagram'></i></a>
+                        <a href="mailto:kennethnovero6@gmail.com"> <i class='bx bxl-gmail'></i></a>
+                        <a href="https://www.linkedin.com/in/kenneth-novero-a6bb35243/"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/kentex16" title="GitHub"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h3>Contact Form</h3>
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="email" placeholder="Email" required>
+                        <textarea placeholder="Feel free to send insight." id="message" cols="30" rows="10"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </section>
+        
+    
+        </section>
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2023 Kenneth Novero Personal Portfolio</p>
+                </div>
+            </footer>
         </div>
     </div>
 </div>
 </div>
 </div>
+
 <div class="themes-container">
 
     <div id="theme-close" class="fas fa-times"></div>
@@ -288,8 +326,8 @@
 
 </div>
 
-
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/tailwind.config.js"></script>

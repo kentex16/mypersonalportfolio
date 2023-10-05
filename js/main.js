@@ -13,5 +13,17 @@ var typed = new Typed(".text", {
     loop: true,
     smartBackspace: true 
 });
-
+function sendEmail (){
+    Email.send({
+        secureToken :"cf4b053f-42d7-4f4c-82e4-837c369073bb",
+        To : 'kennethnovero6@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Insights",
+        Body : "Name" +document.getElementById('name').value
+        + "<br> Email:"  + document.getElementById("email").value
+        + "<br> Message:"  + document.getElementById("message").value
+     }).then(
+      message => alert("Message sent Successfully")
+    );
+}
 
