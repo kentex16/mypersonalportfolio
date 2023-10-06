@@ -75,6 +75,9 @@ nav {
 .logo{
     width: 300px ;
 }
+.logo path {
+    fill: var(--red);
+  }
 nav ul {
     list-style: none;
     padding: 0; 
@@ -577,3 +580,120 @@ nav ul li a:hover::after{
     max-width: 1200px; 
     margin: 0 auto; 
 }
+
+
+
+@media (max-width: 768px) {
+    #header {
+      background-size: cover;
+      background-position: center center;
+    }
+  
+    .logo {
+      width: 200px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      font-size: 18px;
+    }
+  
+    .header-text {
+      margin-top: 10%;
+      text-align: center;
+    }
+  
+    .header-text h1 {
+      font-size: 40px;
+    }
+  
+    #about {
+      padding: 50px 0;
+    }
+  
+    .about-col-1 {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #services {
+      padding: 20px 0;
+    }
+  
+    .services-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+  
+    .services-list div {
+      font-size: 16px;
+    }
+  
+    .services-list div i {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+  
+    .services-list div h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .services-list div a {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  
+    #portfolio {
+      padding: 20px 0;
+    }
+  
+    .work {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .work img {
+      width: 100%;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    .contact-form {
+      flex: 1;
+      padding: 20px;
+    }
+  
+    .contact-info h3,
+    .contact-form h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .contact-info p,
+    .contact-form input[type="text"],
+    .contact-form textarea,
+    .contact-form button {
+      font-size: 14px;
+    }
+  
+    .contact-form button {
+      padding: 8px 16px;
+    }
+  
+    .footer p {
+      font-size: 14px;
+    }
+  }
+  
